@@ -1,9 +1,14 @@
 # Antigravity CLI state
 .antigravitycli/
 
-# .NET / MSBuild
+# .NET / MSBuild build outputs
+bin/
+obj/
 **/bin/
 **/obj/
+*.dll
+*.pdb
+*.exe
 *.user
 *.suo
 .vs/
