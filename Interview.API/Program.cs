@@ -94,21 +94,7 @@ app.MapPost("/api/tickets/{id:guid}/purchase", async (Guid id, PurchaseRequest r
 })
 .WithName("PurchaseTicket");
 
-// Admin / CRUD endpoints for Event and Ticket
 
-app.MapPost("/api/events", async (UpsertEventCommand command, IMediator mediator) =>
-{
-    var eventId = await mediator.Send(command);
-    return Results.Created($"/api/events/{eventId}", new { EventId = eventId });
-})
-.WithName("UpsertEvent");
-
-app.MapPost("/api/tickets", async (UpsertTicketCommand command, IMediator mediator) =>
-{
-    var ticketId = await mediator.Send(command);
-    return Results.Ok(new { TicketId = ticketId });
-})
-.WithName("UpsertTicket");
 
 // Database seeding on startup
 using (var scope = app.Services.CreateScope())

@@ -138,18 +138,5 @@ public class ValidationTests
         result.ShouldNotHaveAnyValidationErrors();
     }
 
-    [Fact]
-    public async Task UpsertEvent_Validator_Fails_When_Name_Is_Empty()
-    {
-        // Arrange
-        var validator = new UpsertEventCommandValidator();
-        var command = new UpsertEventCommand(null, "", "Description", DateTime.UtcNow);
 
-        // Act
-        var result = validator.TestValidate(command);
-
-        // Assert
-        result.ShouldHaveValidationErrorFor(x => x.Name)
-              .WithErrorMessage("Event name is required and cannot be empty.");
-    }
 }
