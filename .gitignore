@@ -1,0 +1,15 @@
+# Antigravity CLI state
+.antigravitycli/
+
+# .NET / MSBuild
+**/bin/
+**/obj/
+*.user
+*.suo
+.vs/
+.idea/
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
