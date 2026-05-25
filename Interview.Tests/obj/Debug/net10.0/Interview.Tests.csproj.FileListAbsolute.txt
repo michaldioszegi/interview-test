@@ -462,3 +462,4 @@
 /home/michal/Documents/interview-test/Interview.Tests/bin/Debug/net10.0/runtimes/win-arm64/native/e_sqlite3.dll
 /home/michal/Documents/interview-test/Interview.Tests/bin/Debug/net10.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/michal/Documents/interview-test/Interview.Tests/bin/Debug/net10.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/michal/Documents/interview-test/Interview.Tests/obj/Debug/net10.0/Interview.Tests.sourcelink.json
